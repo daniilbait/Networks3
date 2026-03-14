@@ -1,0 +1,132 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    font-family: 'Times New Roman';
+}
+body
+{
+    margin:0;
+    font-size: 0.75rem;
+}
+div.all
+{ 
+    background-color: #7bffab;
+}
+a:hover {color: rgb(228, 15, 15);}
+header
+{
+    background-color: #F7D7B1;
+}
+.logo
+{
+    border-radius:100%;
+}
+nav a
+{
+    width: 95%;
+    background-color: #ffc1c1ff;
+    border: 1px solid #000000;
+    border-radius: 10px 0;
+    
+    
+    text-decoration: none;
+    text-align: center;
+    color:#000;
+    font-size: 1.125rem;
+    font-weight: bold;
+    font-style: oblique;
+}
+h1/*Заголовок страницы*/
+{
+    font-size: 1rem;
+    font-weight: bold;
+}
+#hyperpages img
+{
+    width: 40%;
+    height: fit-content;
+}
+#hyperpages h2{font-size: 1.25rem; }
+table/*Таблица*/
+{
+    width:auto;
+    border: 3px solid black;
+    border-spacing: 0;
+    font-size: 10px;
+    
+}
+tr{height: 20px;}
+tr.chet     {background-color: #3ae1ff;}
+tr.nechet   {background-color: #f1d9b2;}
+tr:first-child
+{
+    background-color: rgb(85, 181, 255);
+    font-size: 1rem;
+    font-weight: bold;
+}
+tr:nth-child(2)
+{
+    text-align: center;
+    font-size: 0.75rem;
+    font-weight: bold;
+}
+tr:nth-child(5), tr:nth-child(6), tr:nth-child(7)
+{
+    height: 40px;
+}
+tr td 
+{
+    vertical-align: middle;
+    border: 1px solid black;
+    min-width: 35px;
+}
+tr:nth-child(2) td:nth-child(3), td:nth-child(4)
+{
+    width:240px;
+}
+#form
+{
+    background-color: chartreuse;
+    border: 3px solid black;
+}
+#form h2
+{
+    font-size: 1.25rem;
+    align-self: center;
+    margin-bottom: 2px;
+}
+#form .square, #submit
+{
+    border: 2px solid black;
+}
+#form textarea
+{
+    width: 95%;
+}
+footer
+{
+    background-color: yellow;
+}
+@media (min-width:380px) {
+    table {font-size: 14px;}
+    tr:nth-child(1) {font-size: 18px;}
+    tr:nth-child(2) {font-size: 16px;}
+    
+}
+@media (min-width:400px){
+    #form {width: 350px; padding: 10px;}
+}
+@media screen and (min-width: 961px) {
+    body{width: 960px; margin: auto;}
+    h1{font-size: 24px; margin-left: 10px;}
+    table{font-size: 120%;}
+    tr td {padding: 10px;}
+    tr:first-child { font-size: 140%;}
+    tr:nth-child(2) { font-size: 100%;}
+    #hyperpages { margin: 10px 30px 30px 30px;}
+
+  }
