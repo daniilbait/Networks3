@@ -9,12 +9,12 @@
   <body class="container-lg m-auto p-0">
     <div class="all d-flex flex-row flex-wrap justify-content-center w-100">
       <div class="main d-flex flex-column flex-nowrap justify-content-between">
-        <form id="form" method="POST" action="save.php class="order-2 order-sm-1 col-11 mx-auto d-flex flex-column align-self-center my-1 p-1"> <!-- Форма -->
+        <form id="form" method="POST" action="save.php" class="order-2 order-sm-1 col-11 mx-auto d-flex flex-column align-self-center my-1 p-1"> <!-- Форма -->
           <h2 class="mb-2">Форма</h2>
-          <div class="square1 d-flex flex-row justify-content-between mb-1"><label id="fullname">Введите свое ФИО:</label> <input class="square" type="text" required="required"></div><!-- 1) ФИО (текстовое поле); -->
-          <div class="square1 d-flex flex-row justify-content-between mb-1"><label id="tel">Телефон:</label><input class="square" type="tel" required="required"></div><!-- 2) Телефон (поле tel); -->
-          <div class="square1 d-flex flex-row justify-content-between mb-1"><label>e-mail:</label><input class="square" type="email" required="required"></div><!-- 3) e-mail (поле email); -->
-          <div class="square1 d-flex flex-row justify-content-between mb-0"><label>Дата рождения:</label> <input class="square" type="date" required="required"></div><!-- 4) дата рождения (поле даты); -->
+          <div class="square1 d-flex flex-row justify-content-between mb-1"><label id="fullname">Введите свое ФИО:</label> <input class="square" name="full_name" type="text" required="required"></div><!-- 1) ФИО (текстовое поле); -->
+          <div class="square1 d-flex flex-row justify-content-between mb-1"><label id="tel">Телефон:</label><input class="square" type="tel" name="phone" required="required"></div><!-- 2) Телефон (поле tel); -->
+          <div class="square1 d-flex flex-row justify-content-between mb-1"><label>e-mail:</label><input class="square" type="email" name="email" required="required"></div><!-- 3) e-mail (поле email); -->
+          <div class="square1 d-flex flex-row justify-content-between mb-0"><label>Дата рождения:</label> <input class="square" type="date" name="birth_date" required="required"></div><!-- 4) дата рождения (поле даты); -->
           <div class="other mt-1"><label>Ваш пол: М<input type="radio" name="human" required="required"> &nbsp;&nbsp; Ж</label><input type="radio" name="human"></div><!-- 5) пол (радиокнопки); -->
           <label class="other mt-1">Выберите любимый (-ые) ЯП: <select multiple="multiple" name="languages[]" required="required">
             <option value="pascal">Pascal</option>
