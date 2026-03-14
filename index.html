@@ -15,7 +15,10 @@
           <div class="square1 d-flex flex-row justify-content-between mb-1"><label id="tel">Телефон:</label><input class="square" type="tel" name="phone" required="required"></div><!-- 2) Телефон (поле tel); -->
           <div class="square1 d-flex flex-row justify-content-between mb-1"><label>e-mail:</label><input class="square" type="email" name="email" required="required"></div><!-- 3) e-mail (поле email); -->
           <div class="square1 d-flex flex-row justify-content-between mb-0"><label>Дата рождения:</label> <input class="square" type="date" name="birth_date" required="required"></div><!-- 4) дата рождения (поле даты); -->
-          <div class="other mt-1"><label>Ваш пол: М<input type="radio" name="human" required="required"> &nbsp;&nbsp; Ж</label><input type="radio" name="human"></div><!-- 5) пол (радиокнопки); -->
+          <div class="other mt-1">
+            <label>Ваш пол: М<input type="radio" name="gender" value="male" required="required"> &nbsp;&nbsp; Ж</label>
+            <input type="radio" name="gender" value="female">
+          </div><!-- 5) пол (радиокнопки); -->
           <label class="other mt-1">Выберите любимый (-ые) ЯП: <select multiple="multiple" name="languages[]" required="required">
             <option value="pascal">Pascal</option>
             <option value="c">C</option>
