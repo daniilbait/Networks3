@@ -9,14 +9,14 @@
   <body class="container-lg m-auto p-0">
     <div class="all d-flex flex-row flex-wrap justify-content-center w-100">
       <div class="main d-flex flex-column flex-nowrap justify-content-between">
-        <form id="form" class="order-2 order-sm-1 col-11 mx-auto d-flex flex-column align-self-center my-1 p-1"> <!-- Форма -->
+        <form id="form" method="POST" action="save.php class="order-2 order-sm-1 col-11 mx-auto d-flex flex-column align-self-center my-1 p-1"> <!-- Форма -->
           <h2 class="mb-2">Форма</h2>
           <div class="square1 d-flex flex-row justify-content-between mb-1"><label id="fullname">Введите свое ФИО:</label> <input class="square" type="text" required="required"></div><!-- 1) ФИО (текстовое поле); -->
           <div class="square1 d-flex flex-row justify-content-between mb-1"><label id="tel">Телефон:</label><input class="square" type="tel" required="required"></div><!-- 2) Телефон (поле tel); -->
           <div class="square1 d-flex flex-row justify-content-between mb-1"><label>e-mail:</label><input class="square" type="email" required="required"></div><!-- 3) e-mail (поле email); -->
           <div class="square1 d-flex flex-row justify-content-between mb-0"><label>Дата рождения:</label> <input class="square" type="date" required="required"></div><!-- 4) дата рождения (поле даты); -->
           <div class="other mt-1"><label>Ваш пол: М<input type="radio" name="human" required="required"> &nbsp;&nbsp; Ж</label><input type="radio" name="human"></div><!-- 5) пол (радиокнопки); -->
-          <label class="other mt-1">Выберите любимый (-ые) ЯП: <select multiple="multiple" required="required">
+          <label class="other mt-1">Выберите любимый (-ые) ЯП: <select multiple="multiple" name="languages[]" required="required">
             <option value="pascal">Pascal</option>
             <option value="c">C</option>
             <option value="c++">C++</option>
@@ -29,8 +29,8 @@
             <option value="prolog">Prolog</option>
             <option value="scala">Scala</option>
           </select></label>
-          <div class="description mt-1"><label>Расскажите о себе:<textarea class="ms-1" name="message" rows="5" cols="30" required="required"></textarea></label></div><!-- 7) биография (многострочное текстовое поле); -->
-          <label id="checkbox" class="ms-2"><input type="checkbox" required="required"> с контрактом ознакомлен (-а)</label><!-- 8) с контрактом ознакомлен (а) (чекбокс); -->
+          <div class="description mt-1"><label>Расскажите о себе:<textarea name="bio" class="ms-1" name="message" rows="5" cols="30" required="required"></textarea></label></div><!-- 7) биография (многострочное текстовое поле); -->
+          <label id="checkbox" name="contract" value="accepted" class="ms-2"><input type="checkbox" required="required"> с контрактом ознакомлен (-а)</label><!-- 8) с контрактом ознакомлен (а) (чекбокс); -->
           <input class="mb-1" type="submit" id="submit" value="Подтвердить">
         </form> <!-- Форма -->
       </div>
